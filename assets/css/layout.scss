@@ -85,7 +85,7 @@ body {
     // height: 100vh;
     // max-height: 864px;
     background-image: url(../images/top-background.png);
-    // background-size: cover;
+    background-size: cover;
 }
 
 .top__menu {
@@ -96,40 +96,12 @@ body {
 .content {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-// MENU
-.menu {
-    // display: grid;
-    display: flex;
-    justify-content: center;
-}
-
-.menu-wrapper {
-    // display: flex;
-    // flex-direction: column;
-    display: grid;
-    grid-template-columns: 1fr;
-    // width: 100%;
-}
-
-.menu-section {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    padding: 20px;
-}
-
-.menu-section__header {
-    // font-family: Noto Sans;
-    font-size: $font-44;
-    line-height: 120%;
-    margin-bottom: 25px;
-    // border-bottom: 2px solid $color-green;
-}
-
-.menu-section__plain-text {
-    margin-bottom: 3px;
+.content__logo {
+    width: 100%;
+    max-width: 640px;
 }
 
 // FOOTER
@@ -166,29 +138,6 @@ body {
     .top__menu {
         font-size: $font-60;
         color: $color-white
-    }
-
-    // MENU
-    .menu-wrapper {
-        row-gap: 90px;
-    }
-
-    .menu-section {
-        padding: 0;
-    }
-
-    .menu-section__header {
-        margin-bottom: 50px;
-    }
-
-    // MAP
-    .map-wrapper {
-        width: 75%;
-        padding-bottom: 60px;
-    }
-
-    .map-wrapper__google-map-container {
-        height: 650px;
     }
 }
 
