@@ -1,3 +1,51 @@
+.pointer {
+  cursor: pointer;
+}
 
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.text-wrap {
+  white-space: normal;
+}
+
+.p-16 {
+  padding: 16px;
+}
+
+.pv-30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.pv-50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.pv-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.ph-16 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.pt-25 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.pb-80 {
+  padding-bottom: 80px;
+}
 
 /*# sourceMappingURL=components.css.map */

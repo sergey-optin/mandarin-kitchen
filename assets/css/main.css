@@ -1,3 +1,374 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
+/* Fix the bug that causes body go out of screen border and because of that horizontal scrolling. */
+/* https://stackoverflow.com/a/42798283/5184474 */
+html,
+body {
+  position: relative;
+}
+
+/*
+body {
+    overflow: auto;
+}
+*/
+/* http://meyerweb.com/eric/tools/css/reset/
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.text-wrap {
+  white-space: normal;
+}
+
+.p-16 {
+  padding: 16px;
+}
+
+.pv-30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.pv-50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.pv-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.ph-16 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.pt-25 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.pb-80 {
+  padding-bottom: 80px;
+}
+
+body {
+  font-family: "Helvetica Neue", "Arial";
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.navbar-mobile__menu-opener {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #004100;
+}
+
+.navbar-mobile {
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  background-color: #151515;
+  opacity: 0.9;
+}
+
+.navbar-mobile__top {
+  display: flex;
+  justify-content: flex-end;
+  height: 52px;
+}
+
+.navbar-mobile__navbar-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 32px;
+}
+
+.navbar-desktop {
+  display: none;
+  width: 100%;
+  justify-content: center;
+  background-color: #004100;
+}
+
+.navbar-desktop__navbar-list {
+  display: flex;
+  width: calc(100% - 20px);
+  max-width: 675px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-list__navbar-item {
+  color: #ffffff;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url(../images/top-background.png);
+}
+
+.top__menu {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  padding: 20px;
+}
+
+.menu-section__header {
+  font-size: 44px;
+  line-height: 120%;
+  margin-bottom: 25px;
+}
+
+.menu-section__plain-text {
+  margin-bottom: 3px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #004100;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer__footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 355px;
+}
+
+@media (min-width: 768px) {
+  .navbar-mobile__menu-opener {
+    display: none;
+  }
+
+  .navbar-mobile {
+    display: none;
+  }
+
+  .navbar-desktop {
+    display: flex;
+  }
+
+  .top__menu {
+    font-size: 60px;
+    color: #ffffff;
+  }
+
+  .menu-wrapper {
+    row-gap: 90px;
+  }
+
+  .menu-section {
+    padding: 0;
+  }
+
+  .menu-section__header {
+    margin-bottom: 50px;
+  }
+
+  .map-wrapper {
+    width: 75%;
+    padding-bottom: 60px;
+  }
+
+  .map-wrapper__google-map-container {
+    height: 650px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
