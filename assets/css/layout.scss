@@ -104,6 +104,22 @@ body {
     max-width: 640px;
 }
 
+// DISH CARD
+.category-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $color-light-gray;
+    border-radius: 3px;
+    margin: 16px;
+}
+
+.category-card__header {
+    font-weight: 600;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+}
+
 // FOOTER
 .footer {
     display: flex;
