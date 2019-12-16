@@ -275,6 +275,10 @@ body {
   width: 20px;
 }
 
+.navbar-list__shopping-cart {
+  width: 16px;
+}
+
 .top {
   display: flex;
   flex-direction: column;
@@ -324,10 +328,6 @@ body {
   border-top: 6px solid #151515;
 }
 
-.menu__content {
-  width: 1100px;
-}
-
 .menu__header {
   font-weight: 600;
   padding-top: 16px;
@@ -375,8 +375,20 @@ body {
   font-size: 16px;
 }
 
+.dish-card__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
 .dish-card__price {
   font-weight: 600;
+}
+
+.dish-card__add-dish-btn {
+  background-color: #65DB30;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 3px;
 }
 
 .footer {
@@ -413,6 +425,7 @@ body {
 
   .menu__content {
     grid-template-columns: repeat(auto-fill, minmax(100px, 489px));
+    width: 1100px;
     column-gap: 40px;
     padding-top: 60px;
   }
