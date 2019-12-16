@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mandaring Kitchen Menu</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+
+<body>
+    <div class="main">
+        <nav class="navbar-mobile__menu-opener">
+            <img class="ph-16" src="./assets/images/mand-kitchen-white.png">
+            <img class="p-16" src="./assets/images/menu-hamburger.svg" onclick="openMenu()">
+        </nav>
+        <nav id="mobile-menu" class="navbar-mobile">
+            <div class="navbar-mobile__top">
+                <!-- <img class="p-16" src="./assets/images/menu-hamburger.svg"> -->
+                <div class="cross pointer" onclick="closeMenu()">
+                    <p class="cross__line cross__top"></p>
+                    <p class="cross__line cross__bottom"></p>
+                </div>
+            </div>
+            <ul id="mobile-menu-list" class="navbar-mobile__navbar-list">
+                <!-- <div>
+                    <img src="assets/images/MandKitc_Logo-White_1280w 1.png">
+                </div> -->
+                <li class="navbar-list__navbar-item pt-8">Home</li>
+                <li class="navbar-list__navbar-item pt-8">Welcome</li>
+                <li class="navbar-list__navbar-item pt-8">Abous Us</li>
+                <li class="navbar-list__navbar-item pt-8">Menu</li>
+                <li class="navbar-list__navbar-item pt-8">Rewards</li>
+                <li class="navbar-list__navbar-item pt-8">Contact Us</li>
+            </ul>
+        </nav>
+        <nav class="navbar-desktop">
+            <ul class="navbar-desktop__navbar-list">
+                <div class="pointer">
+                    <img src="assets/images/mand-kitchen-white.png">
+                </div>
+                <li class="navbar-list__navbar-item pointer text-nowrap pv-30">Home</li>
+                <li class="navbar-list__navbar-item pointer text-nowrap pv-30">Welcome</li>
+                <li class="navbar-list__navbar-item pointer text-nowrap pv-30">Abous Us</li>
+                <li class="navbar-list__navbar-item pointer text-nowrap pv-30">Menu</li>
+                <li class="navbar-list__navbar-item pointer text-nowrap pv-30">Rewards</li>
+                <li class="navbar-list__navbar-item pointer text-nowrap pv-30">Contact Us</li>
+            </ul>
+        </nav>
+        <div class="top pv-50">
+            <h1 class="top__menu">Menu</h1>
+        </div>
+        <div class="content">
+            <img class="content__logo" src="assets/images/mand-kitchen-green.png">
+            <div class="content__menu">
+                <div class="menu__section-header">
+                    <img class="img-fluid" src="assets/images/category-appetizers.png">
+                    <p class="menu__header">Appetizers</p>
+                    <p class="menu__desc">We offer a wide variety of appetizers including Deep Fried Spring Rolls, BBQ Pork, Pan Seared Dumplings, Chicken Potstickers and more.</p>
+                </div>
+                <div class="menu__content">
+                    <div class="dish-card">
+                        <img class="dish-card__img img-fluid" src="assets/images/dish-spring-rolls.png">
+                        <div class="dish-card__info">
+                            <span>Deep Fried Spring Rolls (Vegetables)</span>
+                            <span>$4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__footer-wrapper">
+                <p class="pt-25">206-878-8511</p>
+                <p class="pt-25">22612 7th Avenue South, Des Moines, WA 98198</p class="pv-25">
+                <p class="pt-25 pb-80">Website Created by Opt-In Media</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

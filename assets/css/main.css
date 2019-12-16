@@ -290,6 +290,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 16px;
 }
 
 .content__logo {
@@ -310,6 +311,50 @@ body {
   padding-top: 16px;
   padding-bottom: 16px;
   padding-left: 16px;
+}
+
+.content__menu {
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+  border-top: 6px solid #151515;
+}
+
+.menu__header {
+  font-weight: 600;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.menu__desc {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-top: 1px solid #9F9F9F;
+  border-bottom: 1px solid #9F9F9F;
+  color: #9F9F9F;
+}
+
+.menu__content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+}
+
+.dish-card {
+  display: flex;
+  justify-content: space-between;
+  max-width: 491px;
+}
+
+.dish-card__img {
+  width: 50%;
+}
+
+.dish-card__info {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 16px;
 }
 
 .footer {
@@ -342,6 +387,10 @@ body {
   .top__menu {
     font-size: 60px;
     color: #ffffff;
+  }
+
+  .menu__content {
+    padding-top: 60px;
   }
 }
 
