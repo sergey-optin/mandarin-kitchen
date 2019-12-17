@@ -7,10 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mandaring Kitchen Menu</title>
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <script src="assets/js/shoppingCart.js"></script>
 </head>
 
 <body>
     <div class="main">
+        <div class="shopping-cart-container">
+            <div></div>
+        </div>
         <nav class="navbar-mobile__menu-opener">
             <img class="ph-16" src="./assets/images/mand-kitchen-white.png">
             <img class="p-16" src="./assets/images/menu-hamburger.svg" onclick="openMenu()">
@@ -46,7 +50,7 @@
                 <li class="navbar-list__navbar-item pointer text-nowrap pv-30">Menu</li>
                 <li class="navbar-list__navbar-item pointer text-nowrap pv-30">Rewards</li>
                 <li class="navbar-list__navbar-item pointer text-nowrap pv-30">Contact Us</li>
-                <li class="navbar-list__navbar-item pointer">
+                <li onclick="openShoppingCart()" class="navbar-list__navbar-item pointer">
                     <img class="navbar-list__shopping-cart" src="./assets/images/shopping-cart.svg">
                 </li>
             </ul>
