@@ -147,6 +147,11 @@ body {
     border-top: 6px solid $color-black;
 }
 
+.menu__section-img {
+    height: 320px;
+    object-fit: cover;
+}
+
 // .menu__content {
 //     width: 1100px;
 // }

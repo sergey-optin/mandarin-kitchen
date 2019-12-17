@@ -337,6 +337,11 @@ body {
   border-top: 6px solid #151515;
 }
 
+.menu__section-img {
+  height: 320px;
+  object-fit: cover;
+}
+
 .menu__header {
   font-weight: 600;
   padding-top: 16px;
