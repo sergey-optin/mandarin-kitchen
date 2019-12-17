@@ -6,6 +6,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
+  position: relative;
 }
 
 .navbar-mobile__menu-opener {
@@ -178,6 +179,21 @@ body {
   color: #ffffff;
   padding: 5px 8px;
   border-radius: 3px;
+}
+
+.shopping-cart-container {
+  display: none;
+  justify-content: flex-end;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0.8;
+}
+
+.shopping-cart-container__checkout-container {
+  background-color: #ffffff;
 }
 
 .footer {
