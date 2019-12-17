@@ -5,15 +5,13 @@
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 /* Fix the bug that causes body go out of screen border and because of that horizontal scrolling. */
 /* https://stackoverflow.com/a/42798283/5184474 */
 html,
 body {
-  position: relative;
-}
+  position: relative; }
 
 /*
 body {
@@ -110,8 +108,7 @@ video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
 article,
@@ -125,106 +122,85 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
-}
+  display: block; }
 
 body {
-  line-height: 1;
-}
+  line-height: 1; }
 
 ol,
 ul {
-  list-style: none;
-}
+  list-style: none; }
 
 blockquote,
 q {
-  quotes: none;
-}
+  quotes: none; }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
-  content: none;
-}
+  content: '';
+  content: none; }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 a {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .pointer {
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .img-fluid {
   width: 100%;
-  height: auto;
-}
+  height: auto; }
 
 .text-nowrap {
-  white-space: nowrap;
-}
+  white-space: nowrap; }
 
 .text-wrap {
-  white-space: normal;
-}
+  white-space: normal; }
 
 .p-16 {
-  padding: 16px;
-}
+  padding: 16px; }
 
 .pv-30 {
   padding-top: 30px;
-  padding-bottom: 30px;
-}
+  padding-bottom: 30px; }
 
 .pv-50 {
   padding-top: 50px;
-  padding-bottom: 50px;
-}
+  padding-bottom: 50px; }
 
 .pv-100 {
   padding-top: 100px;
-  padding-bottom: 100px;
-}
+  padding-bottom: 100px; }
 
 .ph-16 {
   padding-left: 16px;
-  padding-right: 16px;
-}
+  padding-right: 16px; }
 
 .pt-25 {
   padding-top: 25px;
-  padding-bottom: 25px;
-}
+  padding-bottom: 25px; }
 
 .pb-80 {
-  padding-bottom: 80px;
-}
+  padding-bottom: 80px; }
 
 body {
-  font-family: "Helvetica Neue", "Arial";
-}
+  font-family: "Helvetica Neue", "Arial"; }
 
 .main {
   display: flex;
   flex-direction: column;
-  width: 100%;
-}
+  width: 100%; }
 
 .navbar-mobile__menu-opener {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  background-color: #004100;
-}
+  background-color: #004100; }
 
 .navbar-mobile {
   display: none;
@@ -235,41 +211,35 @@ body {
   position: fixed;
   z-index: 1;
   background-color: #151515;
-  opacity: 0.9;
-}
+  opacity: 0.9; }
 
 .navbar-mobile__top {
   display: flex;
   justify-content: flex-end;
-  height: 52px;
-}
+  height: 52px; }
 
 .navbar-mobile__navbar-list {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 32px;
-}
+  font-size: 32px; }
 
 .navbar-desktop {
   display: none;
   width: 100%;
   justify-content: center;
-  background-color: #004100;
-}
+  background-color: #004100; }
 
 .navbar-desktop__navbar-list {
   display: flex;
   width: calc(100% - 20px);
   max-width: 675px;
   justify-content: space-between;
-  align-items: center;
-}
+  align-items: center; }
 
 .navbar-list__navbar-item {
-  color: #ffffff;
-}
+  color: #ffffff; }
 
 .top {
   display: flex;
@@ -278,120 +248,99 @@ body {
   align-items: center;
   position: relative;
   background-image: url(../images/top-background.png);
-  background-size: cover;
-}
+  background-size: cover; }
 
 .top__menu {
   font-size: 30px;
-  color: #ffffff;
-}
+  color: #ffffff; }
 
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 16px;
-}
+  padding: 16px; }
 
 .content__logo {
   width: 100%;
-  max-width: 640px;
-}
+  max-width: 640px; }
 
 .category-card {
   display: flex;
   flex-direction: column;
   border: 1px solid #E5E5E5;
   border-radius: 3px;
-  margin: 16px;
-}
+  margin: 16px; }
 
 .category-card__header {
   font-weight: 600;
   padding-top: 16px;
   padding-bottom: 16px;
-  padding-left: 16px;
-}
+  padding-left: 16px; }
 
 .content__menu {
   display: flex;
   flex-direction: column;
   padding-top: 16px;
-  border-top: 6px solid #151515;
-}
+  border-top: 6px solid #151515; }
 
 .menu__header {
   font-weight: 600;
   padding-top: 16px;
-  padding-bottom: 16px;
-}
+  padding-bottom: 16px; }
 
 .menu__desc {
   padding-top: 16px;
   padding-bottom: 16px;
   border-top: 1px solid #9F9F9F;
   border-bottom: 1px solid #9F9F9F;
-  color: #9F9F9F;
-}
+  color: #9F9F9F; }
 
 .menu__content {
   display: flex;
   flex-direction: column;
-  padding-top: 16px;
-}
+  padding-top: 16px; }
 
 .dish-card {
   display: flex;
   justify-content: space-between;
-  max-width: 491px;
-}
+  max-width: 491px; }
 
 .dish-card__img {
-  width: 50%;
-}
+  width: 50%; }
 
 .dish-card__info {
   display: flex;
   flex-direction: column;
   width: 50%;
-  padding: 16px;
-}
+  padding: 16px; }
 
 .footer {
   display: flex;
   justify-content: center;
   background-color: #004100;
   color: #ffffff;
-  text-align: center;
-}
+  text-align: center; }
 
 .footer__footer-wrapper {
   display: flex;
   flex-direction: column;
-  width: 355px;
-}
+  width: 355px; }
 
 @media (min-width: 768px) {
   .navbar-mobile__menu-opener {
-    display: none;
-  }
+    display: none; }
 
   .navbar-mobile {
-    display: none;
-  }
+    display: none; }
 
   .navbar-desktop {
-    display: flex;
-  }
+    display: flex; }
 
   .top__menu {
     font-size: 60px;
-    color: #ffffff;
-  }
+    color: #ffffff; }
 
   .menu__content {
-    padding-top: 60px;
-  }
-}
+    padding-top: 60px; } }
 
 /*# sourceMappingURL=main.css.map */
