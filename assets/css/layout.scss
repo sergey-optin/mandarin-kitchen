@@ -214,12 +214,13 @@ body {
     width: 100%;
     position: absolute;
     z-index: 1;
-    background-color: rgb(0, 0, 0, 0.8);
-    opacity: 0.8;
+    background-color: rgba(0, 0, 0, 0.8);
+    // opacity: 0.8;
 }
 
 .shopping-cart-container__checkout-container {
     background-color: $color-white;
+    width: 600px;
 }
 
 // FOOTER
