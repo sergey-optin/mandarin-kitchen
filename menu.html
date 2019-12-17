@@ -7,10 +7,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mandaring Kitchen Menu</title>
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <script src="assets/js/shoppingCart.js"></script>
 </head>
 
 <body>
     <div class="main">
+        <div id="shopping-cart-container" class="shopping-cart-container">
+            <div class="shopping-cart-container__checkout-container">
+                <img class="img-fluid" src="assets/images/mand-kitchen-green.png">
+                <span class="shopping-cart-container__title">Your order</span>
+                <div class="checkout-container__dish-container">
+                    <span>1</span>
+                    <span>Deep Fried Spring Rolls (Vegetables)</span>
+                    <span>$4</span>
+                </div>
+                <div class="checkout-container__total-container">
+                    <span>Total:</span>
+                    <span>$4</span>
+                </div>
+                <div class="checkout-container__checkout-btn">
+                    <span class="checkout-container__checkout-txt">Checkout</span>
+                </div>
+            </div>
+        </div>
         <nav class="navbar-mobile__menu-opener">
             <img class="ph-16" src="./assets/images/mand-kitchen-white.png">
             <img class="p-16" src="./assets/images/menu-hamburger.svg" onclick="openMenu()">
@@ -46,6 +65,9 @@
                 <li class="navbar-list__navbar-item pointer text-nowrap pv-30">Menu</li>
                 <li class="navbar-list__navbar-item pointer text-nowrap pv-30">Rewards</li>
                 <li class="navbar-list__navbar-item pointer text-nowrap pv-30">Contact Us</li>
+                <li onclick="openShoppingCart()" class="navbar-list__navbar-item pointer">
+                    <img class="navbar-list__shopping-cart" src="./assets/images/shopping-cart.svg">
+                </li>
             </ul>
         </nav>
         <div class="top pv-50">
@@ -57,14 +79,106 @@
                 <div class="menu__section-header">
                     <img class="img-fluid" src="assets/images/category-appetizers.png">
                     <p class="menu__header">Appetizers</p>
-                    <p class="menu__desc">We offer a wide variety of appetizers including Deep Fried Spring Rolls, BBQ Pork, Pan Seared Dumplings, Chicken Potstickers and more.</p>
+                    <p class="menu__desc">We offer a wide variety of appetizers including Deep Fried Spring Rolls, BBQ
+                        Pork, Pan Seared Dumplings, Chicken Potstickers and more.</p>
                 </div>
                 <div class="menu__content">
                     <div class="dish-card">
                         <img class="dish-card__img img-fluid" src="assets/images/dish-spring-rolls.png">
                         <div class="dish-card__info">
-                            <span>Deep Fried Spring Rolls (Vegetables)</span>
-                            <span>$4</span>
+                            <span class="dish-card__title">Deep Fried Spring Rolls (Vegetables)</span>
+                            <div class="dish-card__bottom">
+                                <span class="dish-card__price">$4</span>
+                                <div class="dish-card__add-dish-btn pointer">
+                                    <span>Add to cart</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dish-card">
+                        <img class="dish-card__img img-fluid" src="assets/images/dish-bbq-pork.png">
+                        <div class="dish-card__info">
+                            <span class="dish-card__title">BBQ Pork</span>
+                            <div class="dish-card__bottom">
+                                <span class="dish-card__price">$10</span>
+                                <div class="dish-card__add-dish-btn pointer">
+                                    <span>Add to cart</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dish-card">
+                        <img class="dish-card__img img-fluid" src="assets/images/dish-dumplings.png">
+                        <div class="dish-card__info">
+                            <span class="dish-card__title">Pan Seared Dumplings (6)</span>
+                            <div class="dish-card__bottom">
+                                <span class="dish-card__price">$8</span>
+                                <div class="dish-card__add-dish-btn pointer">
+                                    <span>Add to cart</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dish-card">
+                        <img class="dish-card__img img-fluid" src="assets/images/dish-potstickers.png">
+                        <div class="dish-card__info">
+                            <span class="dish-card__title">Chicken Potstickers (Fried) (9)</span>
+                            <div class="dish-card__bottom">
+                                <span class="dish-card__price">$8</span>
+                                <div class="dish-card__add-dish-btn pointer">
+                                    <span>Add to cart</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dish-card">
+                        <img class="dish-card__img img-fluid" src="assets/images/img-default.png">
+                        <div class="dish-card__info">
+                            <span class="dish-card__title">Pork Egg Rolls (3)</span>
+                            <div class="dish-card__bottom">
+                                <span class="dish-card__price">$6</span>
+                                <div class="dish-card__add-dish-btn pointer">
+                                    <span>Add to cart</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dish-card">
+                        <img class="dish-card__img img-fluid" src="assets/images/dish-puffs.png">
+                        <div class="dish-card__info">
+                            <span class="dish-card__title">Crab Cheese Puffs</span>
+                            <div class="dish-card__bottom">
+                                <span class="dish-card__price">$7</span>
+                                <div class="dish-card__add-dish-btn pointer">
+                                    <span>Add to cart</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dish-card">
+                        <img class="dish-card__img img-fluid" src="assets/images/dish-edamame.png">
+                        <div class="dish-card__info">
+                            <span class="dish-card__title">Edamame (Salted Soybeans)</span> <span
+                                class="dish-card__price">$4</span>
+                            <div class="dish-card__bottom">
+                                <span class="dish-card__price">$4</span>
+                                <div class="dish-card__add-dish-btn pointer">
+                                    <span>Add to cart</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dish-card">
+                        <img class="dish-card__img img-fluid" src="assets/images/img-default.png">
+                        <div class="dish-card__info">
+                            <span class="dish-card__title">Fried Calamari</span>
+                            <span class="dish-card__price">$9</span>
+                            <div class="dish-card__bottom">
+                                <span class="dish-card__price">$9</span>
+                                <div class="dish-card__add-dish-btn pointer">
+                                    <span>Add to cart</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

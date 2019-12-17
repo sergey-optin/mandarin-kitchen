@@ -4,7 +4,12 @@ body {
 .main {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   width: 100%; }
+=======
+  width: 100%;
+  position: relative; }
+>>>>>>> temp
 
 .navbar-mobile__menu-opener {
   display: flex;
@@ -44,12 +49,21 @@ body {
 .navbar-desktop__navbar-list {
   display: flex;
   width: calc(100% - 20px);
-  max-width: 675px;
+  max-width: 700px;
   justify-content: space-between;
   align-items: center; }
 
 .navbar-list__navbar-item {
   color: #ffffff; }
+<<<<<<< HEAD
+=======
+
+.navbar-list__shopping-cart-wrapper {
+  width: 20px; }
+
+.navbar-list__shopping-cart {
+  width: 16px; }
+>>>>>>> temp
 
 .top {
   display: flex;
@@ -106,23 +120,105 @@ body {
   color: #9F9F9F; }
 
 .menu__content {
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
+=======
+  display: grid;
+  grid-template-columns: 1fr;
+>>>>>>> temp
   padding-top: 16px; }
 
 .dish-card {
   display: flex;
   justify-content: space-between;
+<<<<<<< HEAD
   max-width: 491px; }
 
 .dish-card__img {
   width: 50%; }
+=======
+  max-width: 491px;
+  margin-bottom: 16px;
+  border: 1px solid #E5E5E5;
+  border-radius: 3px; }
+
+.dish-card__img {
+  width: 40%;
+  object-fit: cover; }
+>>>>>>> temp
 
 .dish-card__info {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   width: 50%;
   padding: 16px; }
+=======
+  justify-content: space-between;
+  width: 60%;
+  padding: 8px; }
+
+.dish-card__title {
+  font-weight: 600;
+  font-size: 16px; }
+
+.dish-card__bottom {
+  display: flex;
+  justify-content: space-between; }
+
+.dish-card__price {
+  font-weight: 600; }
+
+.dish-card__add-dish-btn {
+  background-color: #65DB30;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 3px; }
+
+.shopping-cart-container {
+  display: none;
+  justify-content: flex-end;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8); }
+
+.shopping-cart-container__checkout-container {
+  background-color: #ffffff;
+  width: 600px; }
+
+.shopping-cart-container__title {
+  padding-left: 16px;
+  font-weight: 600;
+  font-size: 20px;
+  padding-bottom: 20px; }
+
+.checkout-container__dish-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  border-top: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5; }
+
+.checkout-container__total-container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 30px; }
+
+.checkout-container__checkout-btn {
+  width: 100%;
+  padding: 20px 0 20px 20px;
+  background-color: #65DB30;
+  margin-top: 50px; }
+
+.checkout-container__checkout-txt {
+  color: #ffffff;
+  font-size: 40px; }
+>>>>>>> temp
 
 .footer {
   display: flex;
@@ -151,6 +247,24 @@ body {
     color: #ffffff; }
 
   .menu__content {
+<<<<<<< HEAD
     padding-top: 60px; } }
+=======
+    grid-template-columns: repeat(auto-fill, minmax(100px, 489px));
+    width: 1100px;
+    column-gap: 40px;
+    padding-top: 60px; }
+
+  .dish-card__info {
+    grid-template-columns: 491px 491px;
+    padding: 16px; }
+
+  .dish-card__title {
+    font-weight: 600;
+    font-size: 20px; }
+
+  .dish-card__price {
+    font-weight: 600; } }
+>>>>>>> temp
 
 /*# sourceMappingURL=layout.css.map */
