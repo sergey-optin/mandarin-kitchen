@@ -184,6 +184,7 @@ body {
     justify-content: space-between;
     width: 60%;
     padding: 8px;
+    opacity: 1;
 }
 
 .dish-card__title {
@@ -212,7 +213,7 @@ body {
     justify-content: flex-end;
     height: 100vh;
     width: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.8);
     // opacity: 0.8;
