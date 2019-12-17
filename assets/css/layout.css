@@ -96,6 +96,13 @@ body {
   max-width: 640px;
 }
 
+.category-card__link:link,
+.category-card__link:visited,
+.category-card__link:hover,
+.category-card__link:active {
+  color: #151515;
+}
+
 .category-card {
   display: flex;
   flex-direction: column;
@@ -109,6 +116,7 @@ body {
   padding-top: 16px;
   padding-bottom: 16px;
   padding-left: 16px;
+  color: #151515 !important;
 }
 
 .content__menu {
