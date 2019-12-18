@@ -115,6 +115,13 @@ body {
 }
 
 // DISH CARD
+.category-card__link:link,
+.category-card__link:visited,
+.category-card__link:hover,
+.category-card__link:active {
+    color: $color-black;
+}
+
 .category-card {
     display: flex;
     flex-direction: column;
@@ -128,6 +135,7 @@ body {
     padding-top: 16px;
     padding-bottom: 16px;
     padding-left: 16px;
+    color: $color-black !important;
 }
 
 
@@ -137,6 +145,11 @@ body {
     flex-direction: column;
     padding-top: 16px;
     border-top: 6px solid $color-black;
+}
+
+.menu__section-img {
+    height: 320px;
+    object-fit: cover;
 }
 
 // .menu__content {
@@ -184,6 +197,7 @@ body {
     justify-content: space-between;
     width: 60%;
     padding: 8px;
+    opacity: 1;
 }
 
 .dish-card__title {
@@ -212,7 +226,7 @@ body {
     justify-content: flex-end;
     height: 100vh;
     width: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.8);
     // opacity: 0.8;
