@@ -7,13 +7,46 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mandaring Kitchen Menu</title>
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <script src="assets/js/shoppingCart.js"></script>
 </head>
 
 <body>
     <div class="main">
+        <div id="shopping-cart-container" class="shopping-cart-container">
+            <div class="shopping-cart-container__checkout-container">
+                <img src="">
+                <img class="img-fluid" src="assets/images/mand-kitchen-green.png">
+                <p class="shopping-cart-container__title">Your order</p>
+                <div class="checkout-container__dish-container">
+                    <span>1</span>
+                    <span>Deep Fried Spring Rolls (Vegetables)</span>
+                    <span>$4</span>
+                </div>
+                <div class="checkout-container__dish-container">
+                    <span>1</span>
+                    <span>BBQ Pork</span>
+                    <span>$10</span>
+                </div>
+                <div class="checkout-container__dish-container">
+                    <span>1</span>
+                    <span>Pan Seared Dumplings (6)</span>
+                    <span>$8</span>
+                </div>
+                <div class="checkout-container__total-container">
+                    <span>Total:</span>
+                    <span>$22</span>
+                </div>
+                <div class="checkout-container__checkout-btn pointer">
+                    <span class="checkout-container__checkout-txt">Checkout</span>
+                </div>
+            </div>
+        </div>
         <nav class="navbar-mobile__menu-opener">
             <img class="ph-16" src="./assets/images/mand-kitchen-white.png">
-            <img class="p-16" src="./assets/images/menu-hamburger.svg" onclick="openMenu()">
+            <div>
+                <img class="navbar-list__shopping-cart" src="./assets/images/shopping-cart.svg">
+                <img onclick="openMenu()" class="p-16" src="./assets/images/menu-hamburger.svg">
+            </div>
         </nav>
         <nav id="mobile-menu" class="navbar-mobile">
             <div class="navbar-mobile__top">
