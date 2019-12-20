@@ -14,6 +14,9 @@
     <div class="main">
         <div id="shopping-cart-container" class="shopping-cart-container">
             <div class="shopping-cart-container__checkout-container">
+                <div class="shopping-cart-container__close-container">
+                    <img onclick="closeShoppingCart()" src="assets/images/times-solid.svg" class="pointer p-16">
+                </div>
                 <img class="img-fluid" src="assets/images/mand-kitchen-green.png">
                 <p class="shopping-cart-container__title">Your order</p>
                 <div class="checkout-container__dish-container">
@@ -42,7 +45,11 @@
         </div>
         <nav class="navbar-mobile__menu-opener">
             <img class="ph-16" src="./assets/images/mand-kitchen-white.png">
-            <img class="p-16" src="./assets/images/menu-hamburger.svg" onclick="openMenu()">
+            <div class="navbar-mobile__right-container">
+                <img onclick="openShoppingCart()" class="navbar-list__shopping-cart pointer p-16"
+                    src="./assets/images/shopping-cart.svg">
+                <img onclick="openMenu()" class="p-16 pointer" src="./assets/images/menu-hamburger.svg">
+            </div>
         </nav>
         <nav id="mobile-menu" class="navbar-mobile">
             <div class="navbar-mobile__top">
@@ -58,7 +65,7 @@
                 </div> -->
                 <li class="navbar-list__navbar-item pt-8">Home</li>
                 <li class="navbar-list__navbar-item pt-8">Welcome</li>
-                <li class="navbar-list__navbar-item pt-8">Abous Us</li>
+                <li class="navbar-list__navbar-item pt-8">About Us</li>
                 <li class="navbar-list__navbar-item pt-8">Menu</li>
                 <li class="navbar-list__navbar-item pt-8">Rewards</li>
                 <li class="navbar-list__navbar-item pt-8">Contact Us</li>
