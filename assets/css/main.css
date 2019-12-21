@@ -309,6 +309,11 @@ body {
   max-width: 640px;
 }
 
+.content__categories {
+  display: flex;
+  flex-direction: column;
+}
+
 .category-card__link:link,
 .category-card__link:visited,
 .category-card__link:hover,
@@ -504,6 +509,17 @@ body {
     width: 1100px;
     column-gap: 40px;
     padding-top: 60px;
+  }
+
+  .content__categories {
+    width: 1220px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .category-card {
+    width: 372px;
   }
 
   .dish-card__info {

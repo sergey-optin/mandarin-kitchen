@@ -120,7 +120,14 @@ body {
     max-width: 640px;
 }
 
-// DISH CARD
+.content__categories {
+    // display: grid;
+    // grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+}
+
+// CATEGORY CARD
 .category-card__link:link,
 .category-card__link:visited,
 .category-card__link:hover,
@@ -328,6 +335,23 @@ body {
         width: 1100px;
         column-gap: 40px;
         padding-top: 60px;
+    }
+
+    .content__categories {
+        // display: grid;
+        // grid-template-columns: 1fr 1fr 1fr;
+        // justify-items: center;
+        // align-items: center;
+        // justify-content: center;
+        // align-content: center;
+        width: 1220px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .category-card {
+        width: 372px;
     }
 
     //DISH CARD
