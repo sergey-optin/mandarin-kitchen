@@ -6,6 +6,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
+  position: relative;
 }
 
 .navbar-mobile__menu-opener {
@@ -13,6 +14,12 @@ body {
   justify-content: space-between;
   width: 100%;
   background-color: #004100;
+}
+
+.navbar-mobile__right-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar-mobile {
@@ -51,13 +58,17 @@ body {
 .navbar-desktop__navbar-list {
   display: flex;
   width: calc(100% - 20px);
-  max-width: 675px;
+  max-width: 700px;
   justify-content: space-between;
   align-items: center;
 }
 
 .navbar-list__navbar-item {
   color: #ffffff;
+}
+
+.navbar-list__shopping-cart-wrapper {
+  width: 20px;
 }
 
 .top {
@@ -79,11 +90,24 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 16px;
 }
 
 .content__logo {
   width: 100%;
   max-width: 640px;
+}
+
+.content__categories {
+  display: flex;
+  flex-direction: column;
+}
+
+.category-card__link:link,
+.category-card__link:visited,
+.category-card__link:hover,
+.category-card__link:active {
+  color: #151515;
 }
 
 .category-card {
@@ -99,6 +123,142 @@ body {
   padding-top: 16px;
   padding-bottom: 16px;
   padding-left: 16px;
+  color: #151515 !important;
+}
+
+.content__menu {
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+  border-top: 6px solid #151515;
+}
+
+.menu__section-img {
+  height: 320px;
+  object-fit: cover;
+}
+
+.menu__header {
+  font-weight: 600;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.menu__desc {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-top: 1px solid #9F9F9F;
+  border-bottom: 1px solid #9F9F9F;
+  color: #9F9F9F;
+}
+
+.menu__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-top: 16px;
+}
+
+.dish-card {
+  display: flex;
+  justify-content: space-between;
+  max-width: 491px;
+  margin-bottom: 16px;
+  border: 1px solid #E5E5E5;
+  border-radius: 3px;
+}
+
+.dish-card__img {
+  width: 40%;
+  object-fit: cover;
+}
+
+.dish-card__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+  padding: 8px;
+  opacity: 1;
+}
+
+.dish-card__title {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.dish-card__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dish-card__price {
+  font-weight: 600;
+}
+
+.dish-card__add-dish-btn {
+  background-color: #65DB30;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 3px;
+}
+
+.shopping-cart-container {
+  display: none;
+  justify-content: flex-end;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.shopping-cart-container__checkout-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  max-width: 600px;
+}
+
+.shopping-cart-container__close-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.shopping-cart-container__title {
+  padding-left: 16px;
+  font-weight: 600;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.checkout-container__dish-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  border-top: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.checkout-container__total-container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 30px;
+}
+
+.checkout-container__checkout-btn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #65DB30;
+  margin-top: auto;
+}
+
+.checkout-container__checkout-txt {
+  color: #ffffff;
+  font-size: 40px;
 }
 
 .footer {
@@ -131,6 +291,38 @@ body {
   .top__menu {
     font-size: 60px;
     color: #ffffff;
+  }
+
+  .menu__content {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 489px));
+    width: 1100px;
+    column-gap: 40px;
+    padding-top: 60px;
+  }
+
+  .content__categories {
+    width: 1220px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .category-card {
+    width: 372px;
+  }
+
+  .dish-card__info {
+    grid-template-columns: 491px 491px;
+    padding: 16px;
+  }
+
+  .dish-card__title {
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .dish-card__price {
+    font-weight: 600;
   }
 }
 

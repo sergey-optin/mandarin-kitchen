@@ -7,17 +7,53 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mandaring Kitchen Menu</title>
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <script src="assets/js/shoppingCart.js"></script>
 </head>
 
 <body>
     <div class="main">
+        <div id="shopping-cart-container" class="shopping-cart-container">
+            <div class="shopping-cart-container__checkout-container">
+                <div class="shopping-cart-container__close-container">
+                    <img onclick="closeShoppingCart()" src="assets/images/times-solid.svg" class="pointer p-16" />
+                </div>
+                <img class="img-fluid" src="assets/images/mand-kitchen-green.png" />
+                <p class="shopping-cart-container__title">Your order</p>
+                <div class="checkout-container__dish-container">
+                    <span>1</span>
+                    <span>Deep Fried Spring Rolls (Vegetables)</span>
+                    <span>$4</span>
+                </div>
+                <div class="checkout-container__dish-container">
+                    <span>1</span>
+                    <span>BBQ Pork</span>
+                    <span>$10</span>
+                </div>
+                <div class="checkout-container__dish-container">
+                    <span>1</span>
+                    <span>Pan Seared Dumplings (6)</span>
+                    <span>$8</span>
+                </div>
+                <div class="checkout-container__total-container">
+                    <span>Total:</span>
+                    <span>$22</span>
+                </div>
+                <div class="checkout-container__checkout-btn pointer">
+                    <span class="checkout-container__checkout-txt">Checkout</span>
+                </div>
+            </div>
+        </div>
         <nav class="navbar-mobile__menu-opener">
-            <img class="ph-16" src="./assets/images/mand-kitchen-white.png">
-            <img class="p-16" src="./assets/images/menu-hamburger.svg" onclick="openMenu()">
+            <img class="ph-16" src="./assets/images/mand-kitchen-white.png" />
+            <div class="navbar-mobile__right-container">
+                <img onclick="openShoppingCart()" class="navbar-list__shopping-cart pointer p-16"
+                    src="./assets/images/shopping-cart.svg" />
+                <img onclick="openMenu()" class="p-16 pointer" src="./assets/images/menu-hamburger.svg" />
+            </div>
         </nav>
         <nav id="mobile-menu" class="navbar-mobile">
             <div class="navbar-mobile__top">
-                <!-- <img class="p-16" src="./assets/images/menu-hamburger.svg"> -->
+                <!-- <img class="p-16" src="./assets/images/menu-hamburger.svg"/> -->
                 <div class="cross pointer" onclick="closeMenu()">
                     <p class="cross__line cross__top"></p>
                     <p class="cross__line cross__bottom"></p>
@@ -25,11 +61,11 @@
             </div>
             <ul id="mobile-menu-list" class="navbar-mobile__navbar-list">
                 <!-- <div>
-                    <img src="assets/images/MandKitc_Logo-White_1280w 1.png">
+                    <img src="assets/images/MandKitc_Logo-White_1280w 1.png"/>
                 </div> -->
                 <li class="navbar-list__navbar-item pt-8">Home</li>
                 <li class="navbar-list__navbar-item pt-8">Welcome</li>
-                <li class="navbar-list__navbar-item pt-8">Abous Us</li>
+                <li class="navbar-list__navbar-item pt-8">About Us</li>
                 <li class="navbar-list__navbar-item pt-8">Menu</li>
                 <li class="navbar-list__navbar-item pt-8">Rewards</li>
                 <li class="navbar-list__navbar-item pt-8">Contact Us</li>
@@ -37,71 +73,110 @@
         </nav>
         <nav class="navbar-desktop">
             <ul class="navbar-desktop__navbar-list">
-                <div class="pointer">
-                    <img src="assets/images/mand-kitchen-white.png">
-                </div>
-                <li class="navbar-list__navbar-item pointer text-nowrap pv-30">Home</li>
-                <li class="navbar-list__navbar-item pointer text-nowrap pv-30">Welcome</li>
-                <li class="navbar-list__navbar-item pointer text-nowrap pv-30">Abous Us</li>
-                <li class="navbar-list__navbar-item pointer text-nowrap pv-30">Menu</li>
-                <li class="navbar-list__navbar-item pointer text-nowrap pv-30">Rewards</li>
+                <a>
+                    <li class="pointer">
+                        <img src="assets/images/mand-kitchen-white.png" />
+                    </li>
+                </a>
+                <a>
+                    <li class="navbar-list__navbar-item pointer text-nowrap pv-30">Home</li>
+                </a>
+                <a>
+                    <li class="navbar-list__navbar-item pointer text-nowrap pv-30">Welcome</li>
+                </a>
+                <a>
+                    <li class="navbar-list__navbar-item pointer text-nowrap pv-30">Abous Us</li>
+                </a>
+                <a>
+                    <li class="navbar-list__navbar-item pointer text-nowrap pv-30">Menu</li>
+                </a>
+                <a>
+                    <li class="navbar-list__navbar-item pointer text-nowrap pv-30">Rewards</li>
+                </a>
                 <li class="navbar-list__navbar-item pointer text-nowrap pv-30">Contact Us</li>
+                <li onclick="openShoppingCart()" class="navbar-list__navbar-item pointer">
+                    <img class="navbar-list__shopping-cart" src="./assets/images/shopping-cart.svg" />
+                </li>
             </ul>
         </nav>
         <div class="top pv-50">
             <h1 class="top__menu">Menu</h1>
         </div>
         <div class="content">
-            <img class="content__logo" src="assets/images/mand-kitchen-green.png">
-            <div class="category-card pointer">
-                <img class="img-fluid" src="assets/images/category-appetizers.png">
-                <p class="category-card__header">Appetizers</p>
-            </div>
-            <div class="category-card pointer">
-                <img class="img-fluid" src="assets/images/category-soup.png">
-                <p class="category-card__header">Soup</p>
-            </div>
-            <div class="category-card pointer">
-                <img class="img-fluid" src="assets/images/category-noodles.png">
-                <p class="category-card__header">Noodles</p>
-            </div>
-            <div class="category-card pointer">
-                <img class="img-fluid" src="assets/images/category-vegetables.png">
-                <p class="category-card__header">Vegetables</p>
-            </div>
-            <div class="category-card pointer">
-                <img class="img-fluid" src="assets/images/category-chicken.png">
-                <p class="category-card__header">Chicken</p>
-            </div>
-            <div class="category-card pointer">
-                <img class="img-fluid" src="assets/images/category-pork.png">
-                <p class="category-card__header">Pork</p>
-            </div>
-            <div class="category-card pointer">
-                <img class="img-fluid" src="assets/images/category-beef.png">
-                <p class="category-card__header">Beef</p>
-            </div>
-            <div class="category-card pointer">
-                <img class="img-fluid" src="assets/images/category-seafood.png">
-                <p class="category-card__header">Seafood</p>
-            </div>
-            <div class="category-card pointer">
-                <img class="img-fluid" src="assets/images/category-specialties.png">
-                <p class="category-card__header">House Specialties</p>
-            </div>
-            <div class="category-card pointer">
-                <img class="img-fluid" src="assets/images/category-family-dinners.png">
-                <p class="category-card__header">Family Dinners</p>
-            </div>
-            <div class="category-card pointer">
-                <img class="img-fluid" src="assets/images/category-individual-dinners.png">
-                <p class="category-card__header">Individual Dinners</p>
+            <img class="content__logo" src="assets/images/mand-kitchen-green.png" />
+            <div class="">
+                <a class="category-card__link" href="./menu.html">
+                    <div class="category-card pointer">
+                        <img class="img-fluid" src="assets/images/category-appetizers.png" />
+                        <p class="category-card__header">Appetizers</p>
+                    </div>
+                </a>
+                <a class="category-card__link" href="./menu.html">
+                    <div class="category-card pointer">
+                        <img class="img-fluid" src="assets/images/category-soup.png" />
+                        <p class="category-card__header">Soup</p>
+                    </div>
+                </a>
+                <a class="category-card__link" href="./menu.html">
+                    <div class="category-card pointer">
+                        <img class="img-fluid" src="assets/images/category-noodles.png" />
+                        <p class="category-card__header">Noodles</p>
+                    </div>
+                </a>
+                <a class="category-card__link" href="./menu.html">
+                    <div class="category-card pointer">
+                        <img class="img-fluid" src="assets/images/category-noodles.png" />
+                        <p class="category-card__header">Noodles</p>
+                    </div>
+                </a>
+                <a class="category-card__link" href="./menu.html">
+                    <div class="category-card pointer">
+                        <img class="img-fluid" src="assets/images/category-chicken.png" />
+                        <p class="category-card__header">Chicken</p>
+                    </div>
+                </a>
+                <a class="category-card__link" href="./menu.html">
+                    <div class="category-card pointer">
+                        <img class="img-fluid" src="assets/images/category-pork.png" />
+                        <p class="category-card__header">Pork</p>
+                    </div>
+                </a>
+                <a class="category-card__link" href="./menu.html">
+                    <div class="category-card pointer">
+                        <img class="img-fluid" src="assets/images/category-beef.png" />
+                        <p class="category-card__header">Beef</p>
+                    </div>
+                </a>
+                <a class="category-card__link" href="./menu.html">
+                    <div class="category-card pointer">
+                        <img class="img-fluid" src="assets/images/category-seafood.png" />
+                        <p class="category-card__header">Seafood</p>
+                    </div>
+                </a>
+                <a class="category-card__link" href="./menu.html">
+                    <div class="category-card pointer">
+                        <img class="img-fluid" src="assets/images/category-specialties.png" />
+                        <p class="category-card__header">House Specialties</p>
+                    </div>
+                </a>
+                <a class="category-card__link" href="./menu.html">
+                    <div class="category-card pointer">
+                        <img class="img-fluid" src="assets/images/category-family-dinners.png" />
+                        <p class="category-card__header">Family Dinners</p>
+                    </div>
+                </a>
+                <a class="category-card__link" href="./menu.html">
+                    <div class="category-card pointer">
+                        <img class="img-fluid" src="assets/images/category-individual-dinners.png" />
+                        <p class="category-card__header">Individual Dinners</p>
+                    </div>
+                </a>
             </div>
         </div>
         <footer class="footer">
             <div class="footer__footer-wrapper">
                 <p class="pt-25">206-878-8511</p>
-                <p class="pt-25">22612 7th Avenue South, Des Moines, WA 98198</p class="pv-25">
+                <p class="pt-25">22612 7th Avenue South, Des Moines, WA 98198</p>
                 <p class="pt-25 pb-80">Website Created by Opt-In Media</p>
             </div>
         </footer>
